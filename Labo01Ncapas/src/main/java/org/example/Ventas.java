@@ -1,12 +1,14 @@
+package org.example;
+
 import java.time.LocalDate;
 
-public class Venta {
+public class Ventas {
     private Libro libro;
     private int cantidadVendida;
     private LocalDate fechaVenta;
 
     // Constructor
-    public Venta(Libro libro, int cantidadVendida, LocalDate fechaVenta) {
+    public Ventas(Libro libro, int cantidadVendida, LocalDate fechaVenta) {
         this.libro = libro;
         this.cantidadVendida = cantidadVendida;
         this.fechaVenta = fechaVenta;
@@ -56,7 +58,8 @@ public class Venta {
         System.out.println("Precio total: $" + (libro.getPrecio() * cantidadVendida));
     }
 
-    public String toShow() {
+    @Override
+    public String toString() {
         return "Venta{" +
                 "libro=" + libro.getTitulo() +
                 ", cantidadVendida=" + cantidadVendida +

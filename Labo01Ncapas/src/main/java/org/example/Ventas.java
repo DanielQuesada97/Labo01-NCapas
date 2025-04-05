@@ -64,4 +64,9 @@ public class Venta {
                 ", precio total=$" + (libro.getPrecio() * cantidadVendida) +
                 '}';
     }
+
+    // Método para actualizar las ventas totales del libro
+    public void actualizarVentas(int cantidadVendida) {
+        libro.setCantidadVendida(libro.getCantidadVendida() + cantidadVendida);
+    }
 }

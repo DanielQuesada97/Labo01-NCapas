@@ -1,12 +1,10 @@
 package org.example;
 
+import java.util.InputMismatchException;
 import java.util.List;
-import java.util.Comparator;
-
+import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        List<Libro> libros;
-        List<Ventas> ventas;
-    }
+
 }
+
